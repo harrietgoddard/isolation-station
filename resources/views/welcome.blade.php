@@ -16,9 +16,9 @@
                 What are you grateful for today?
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                @foreach ($articles as $article) 
+                    <li class="list-group-item">{{ $article->gratitude }} - {{ $article->fullName() }}</li>
+                @endforeach
             </ul>
         </div>
 
@@ -27,9 +27,9 @@
                 What have you achieved today?
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                @foreach ($articles as $article) 
+                    <li class="list-group-item">{{ $article->achievement }} - {{ $article->fullName() }}</li>
+                @endforeach 
             </ul>
         </div>
 
@@ -38,9 +38,9 @@
                 Any resolutions for tomorrow?
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                @foreach ($articles as $article) 
+                    <li class="list-group-item">{{ $article->resolution }} - {{ $article->fullName() }}</li>
+                @endforeach
             </ul>
         </div>
 

@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'Articles@index');
+
+Route::get('/{article}', 'Articles@show');
+
+Route::get('/create', 'Articles@create');

@@ -17,6 +17,7 @@ Route::get('/', 'Home@index');
 
 Route::get('articles', 'Articles@index');
 
+Route::get('articles/new', 'Articles@create');
+
 Route::get('articles/{article}', 'Articles@show');
 
-Route::get('/create', 'Articles@create');

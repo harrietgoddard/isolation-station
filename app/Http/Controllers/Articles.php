@@ -22,6 +22,6 @@ class Articles extends Controller
 
     public function create(Article $article)
     {
-        
+        return view('articles/form', ['article' => $article]);
     }
 }

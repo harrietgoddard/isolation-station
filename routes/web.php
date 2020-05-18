@@ -17,7 +17,15 @@ Route::get('/', 'Home@index');
 
 Route::get('articles', 'Articles@index');
 
-Route::get('articles/new', 'Articles@create');
+Route::get('articles/create', 'Articles@create');
+
+Route::post('articles/create', 'Articles@createArticle');
 
 Route::get('articles/{article}', 'Articles@show');
+
+Route::get('gratitude', 'Articles@showGratitude');
+
+Route::get('achievements', 'Articles@showAchievements');
+
+Route::get('resolutions', 'Articles@showResolutions');
 

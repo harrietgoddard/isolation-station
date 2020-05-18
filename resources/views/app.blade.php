@@ -21,19 +21,9 @@
 
   <div class="container">
 
-    <header>
-
-        @include("_parts/navbar")
-
-    </header>
-
     <main class="mt-4">
         @yield("content")
     </main>
-
-    <footer>
-        @include("_parts/footer")
-    </footer>
 
   </div>
 

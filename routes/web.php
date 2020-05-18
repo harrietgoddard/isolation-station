@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Articles@index');
+Route::get('/', 'Home@index');
 
-Route::get('/{article}', 'Articles@show');
+Route::get('articles', 'Articles@index');
+
+Route::get('articles/{article}', 'Articles@show');
 
 Route::get('/create', 'Articles@create');

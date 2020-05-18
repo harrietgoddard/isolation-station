@@ -12,7 +12,7 @@ class Articles extends Controller
     {
         $articles = Article::all();
 
-        return view('welcome', ['articles' => $articles]);
+        return view('articles', ['articles' => $articles]);
     }
 
     public function show(Article $article)

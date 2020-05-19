@@ -14,4 +14,6 @@
             <p class="list-group-item"> {{ $article->resolution }} </p>
     </div>
 
+    @include('comments/form')
+
 @endsection

@@ -23,6 +23,8 @@ Route::post('articles/create', 'Articles@createArticle');
 
 Route::get('articles/{article}', 'Articles@show');
 
+Route::post('articles/{article}', 'Articles@createComment');
+
 Route::get('gratitude', 'Articles@showGratitude');
 
 Route::get('achievements', 'Articles@showAchievements');

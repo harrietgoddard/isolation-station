@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Article;
+use App\Comment;
 
 class Articles extends Controller
 {
@@ -30,6 +31,15 @@ class Articles extends Controller
         $data = $request->all();
 
         $article = Article::create($data);
+
+        return redirect("articles/{$article->id}");
+    }
+
+    public function createComment(Request $request, Article $article)
+    {
+        $comment = new Comment($request->all());
+        
+        $article->comments()->save($comment);
 
         return redirect("articles/{$article->id}");
     }

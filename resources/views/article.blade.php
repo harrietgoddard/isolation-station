@@ -14,6 +14,12 @@
             <p class="list-group-item"> {{ $article->resolution }} </p>
     </div>
 
+    <h2>Comments</h2>
+
+    @foreach ($article->comments as $comment)
+        <p>{{ $comment->comment }} - {{ $comment->fullName() }}</p>
+    @endforeach
+
     @include('comments/form')
 
 @endsection

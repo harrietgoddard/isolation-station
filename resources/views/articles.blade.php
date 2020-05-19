@@ -20,6 +20,9 @@
                     <li class="list-group-item">Resolution: {{ $article->resolution }}</li>
                 </ul>
             </div>
+            @foreach ($article->comments as $comment)
+                <p>{{ $comment->comment }} - {{ $comment->fullName() }}</p>
+            @endforeach
         @endforeach    
     </div>
 

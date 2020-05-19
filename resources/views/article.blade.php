@@ -9,9 +9,9 @@
     <h1>{{ $article->fullName()}}</h1>
 
     <div class="list-group">
-            <p class="list-group-item"> {{ $article->gratitude }} </p>
-            <p class="list-group-item"> {{ $article->achievement }} </p>
-            <p class="list-group-item"> {{ $article->resolution }} </p>
+            <p class="list-group-item">Gratitude: {{ $article->gratitude }} </p>
+            <p class="list-group-item">Achievement: {{ $article->achievement }} </p>
+            <p class="list-group-item">Resolution {{ $article->resolution }} </p>
     </div>
 
     <h2>Comments</h2>

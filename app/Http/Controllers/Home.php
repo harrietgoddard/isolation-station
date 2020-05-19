@@ -10,8 +10,14 @@ class Home extends Controller
 {
     public function index()
     {
-        $articles = Article::all()->random(3);
+        $articlesFirst = Article::all()->random(3);
+        $articlesSecond = Article::all()->random(3);
+        $articlesThird = Article::all()->random(3);
 
-        return view('welcome', ['articles' => $articles]);
+        return view('welcome', [
+            'articlesFirst' => $articlesFirst,
+            'articlesSecond' => $articlesSecond,
+            'articlesThird' => $articlesThird
+            ]);
     }
 }

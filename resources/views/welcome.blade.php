@@ -16,8 +16,8 @@
                 Gratitudes
             </div>
             <ul class="list-group list-group-flush">
-                @foreach ($articles as $article) 
-                    <li class="list-group-item">{{ $article->gratitude }} - {{ $article->fullName() }}</li>
+                @foreach ($articlesFirst as $articleFirst) 
+                    <li class="list-group-item">{{ $articleFirst->gratitude }} - {{ $articleFirst->fullName() }}</li>
                 @endforeach
             </ul>
         </div>
@@ -27,8 +27,8 @@
                 Achievements
             </div>
             <ul class="list-group list-group-flush">
-                @foreach ($articles as $article) 
-                    <li class="list-group-item">{{ $article->achievement }} - {{ $article->fullName() }}</li>
+                @foreach ($articlesSecond as $articleSecond) 
+                    <li class="list-group-item">{{ $articleSecond->achievement }} - {{ $articleSecond->fullName() }}</li>
                 @endforeach 
             </ul>
         </div>
@@ -38,8 +38,8 @@
                 Resolutions
             </div>
             <ul class="list-group list-group-flush">
-                @foreach ($articles as $article) 
-                    <li class="list-group-item">{{ $article->resolution }} - {{ $article->fullName() }}</li>
+                @foreach ($articlesThird as $articleThird) 
+                    <li class="list-group-item">{{ $articleThird->resolution }} - {{ $articleThird->fullName() }}</li>
                 @endforeach
             </ul>
         </div>

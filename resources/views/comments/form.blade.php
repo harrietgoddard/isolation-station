@@ -1,6 +1,6 @@
     <form class="form card" method="post">
         @csrf
-        <h2 class="card-header">Comment</h2>
+        <h3 class="card-header">Add comment</h3>
         <fieldset class="card-body">
             <div class="form-group">
                 <label for="first_name">First name</label>

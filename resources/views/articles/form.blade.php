@@ -24,7 +24,7 @@
                 @enderror
             </div>
             <div class="form-group">
-                <label for="gratitude">Gratitude</label>
+                <label for="gratitude">What are you grateful for today?</label>
                 <input id="gratitude" name="gratitude" class="form-control @error('gratitude') is-invalid @enderror" value="{{ old('gratitude', $article->gratitude) }}"/>
                 @error('gratitude')
                     <p class="invalid-feedback">
@@ -33,7 +33,7 @@
                 @enderror
             </div>
             <div class="form-group">
-                <label for="achievement">Achievement</label>
+                <label for="achievement">What have you achieved today?</label>
                 <input id="achievement" name="achievement" class="form-control @error('achievement') is-invalid @enderror" value="{{ old('achievement', $article->achievement) }}"/>
                 @error('achievement')
                     <p class="invalid-feedback">
@@ -42,7 +42,7 @@
                 @enderror
             </div>
             <div class="form-group">
-                <label for="resolution">Resolution</label>
+                <label for="resolution">Any resolutions for tomorrow or beyond?</label>
                 <input id="resolution" name="resolution" class="form-control @error('resolution') is-invalid @enderror" value="{{ old('resolution', $article->town) }}"/>
                 @error('resolution')
                     <p class="invalid-feedback">

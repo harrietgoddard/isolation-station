@@ -13,7 +13,7 @@
 
         <div class="card" style="width: 18rem;">
             <div class="card-header">
-                What are you grateful for today?
+                Gratitudes
             </div>
             <ul class="list-group list-group-flush">
                 @foreach ($articles as $article) 
@@ -24,7 +24,7 @@
 
         <div class="card" style="width: 18rem;">
             <div class="card-header">
-                What have you achieved today?
+                Achievements
             </div>
             <ul class="list-group list-group-flush">
                 @foreach ($articles as $article) 
@@ -35,7 +35,7 @@
 
         <div class="card" style="width: 18rem;">
             <div class="card-header">
-                Any resolutions for tomorrow?
+                Resolutions
             </div>
             <ul class="list-group list-group-flush">
                 @foreach ($articles as $article) 
@@ -44,6 +44,13 @@
             </ul>
         </div>
 
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        <button class="display-4"><a href="articles/create">Create new journal entry</a></button>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        <button><a href="articles/">See all journal entries</a></button>
+        <button><a href="">My journal entries</a></button>
     </div>
 
 @endsection

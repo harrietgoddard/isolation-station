@@ -6,7 +6,7 @@
 
 @section("content")
 
-    <h1 class="mb-5">Journal entries</h1>
+    <h1 class="mb-5" style="color:white;">Journal entries</h1>
 
     <div class="list-group">
         @foreach ($articles as $article) 

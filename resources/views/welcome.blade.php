@@ -6,8 +6,11 @@
 
 @section("content")
 
-    <h1 class="text-center display-2">Isolation Station</h1>
-    <h4 class="text-center font-italic mb-5">The self-isolation journalling app</h4>
+    <h1 class="text-center display-2" style="color:white;font-weight:500;">Isolation Station</h1>
+    <h4 class="text-center font-italic mb-4" style="color:white;">The self-isolation journalling app</h4>
+    <div class="d-flex justify-content-center mt-0 mb-5">
+        <a class="btn btn-primary" href="articles/create" role="button" style="background:tomato;">Create new journal entry</a>
+    </div>
 
     <div class="d-flex justify-content-between">
 
@@ -55,11 +58,8 @@
 
     </div>
     <div class="d-flex justify-content-center mt-5">
-        <a class="btn btn-primary" href="articles/create" role="button">Create new journal entry</a>
-    </div>
-    <div class="d-flex justify-content-center mt-4">
-        <button><a href="articles/">See all journal entries</a></button>
-        <button><a href="">My journal entries</a></button>
+        <button style="background:tomato;border:none"><a href="articles/" style="color:white;">See all journal entries</a></button>
+        <button class="ml-4" style="background:tomato;border:none"><a href="" style="color:white;">My journal entries</a></button>
     </div>
 
 @endsection

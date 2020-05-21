@@ -15,11 +15,12 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
   <style>
       body {
-        font-family: 'American Typewriter';
-        background: linear-gradient(dodgerblue, paleturquoise);
+        font-family: 'Quicksand';
+        color: black;
       }
       h1 {
         font-family: 'Pacifico';
@@ -27,7 +28,14 @@
       .card, .list-group-item {
         background: transparent;
         border: none;
-        color: navy;
+        color: white;
+        text-align: center;
+      }
+      .list-group {
+        border-radius: 0;
+      }
+      .card-header {
+        font-size: 1.5rem;
       }
   </style>
 </head>

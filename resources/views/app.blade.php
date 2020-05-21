@@ -21,6 +21,7 @@
       body {
         font-family: 'Quicksand';
         color: black;
+        background: aliceblue;
       }
       h1 {
         font-family: 'Pacifico';
@@ -36,6 +37,18 @@
       }
       .card-header {
         font-size: 1.5rem;
+        border-bottom: none;
+      }
+      .card {
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+      }
+      .card-header:first-child {
+        border-radius: 10px;
+      }
+      a, a:hover {
+        text-decoration: none;
+        color: inherit;
       }
   </style>
 </head>

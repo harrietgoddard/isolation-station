@@ -6,15 +6,15 @@
 
 @section("content")
 
-    <div class="pt-5">
-        <h1 class="text-center display-4" style="color:dimgray;font-weight:500;">Isolation Station</h1>
+    <div class="pt-5 mb-5">
+        <h1 class="text-center display-4" style="color:darkslategray;font-weight:500;"><a href="/">Isolation Station</a></h1>
         <h5 class="text-center mb-4" style="color:dimgray;">The self-isolation journalling app</h5>
         <div class="d-flex justify-content-center mt-0 mb-5">
-            <a class="btn btn-outline-primary" href="articles/create" role="button" style="color:dimgray;border:1px solid dimgray;background:#FFF689;">Create new journal entry</a>
+            <a class="btn btn-outline-primary" href="articles/create" role="button" style="color:darkslategray;border:1px solid dimgray;">Create new journal entry</a>
         </div>
     </div>
 
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between mt-5">
 
         <div class="card" style="width: 21rem; background: #ED3456">
             <div class="card-header text-center" style="background:#ED3456;">
@@ -59,9 +59,9 @@
         </div>
 
     </div>
-    <div class="d-flex justify-content-center mt-5">
+    {{-- <div class="d-flex justify-content-center mt-5">
         <button style="background:tomato;border:none"><a href="articles/" style="color:white;">See all journal entries</a></button>
         <button class="ml-4" style="background:tomato;border:none"><a href="" style="color:white;">My journal entries</a></button>
-    </div>
+    </div> --}}
 
 @endsection

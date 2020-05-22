@@ -27,7 +27,6 @@ Route::get('articles/{article}',[
     'as'   =>'articles.show',
     'uses' =>'Articles@show'
    ]);
-
 Route::post('articles/{article}', 'Articles@createComment');
 
 

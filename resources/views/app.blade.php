@@ -1,88 +1,84 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-<head>
-  <meta charset="utf-8">
-  <title>@yield("title")</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <title>@yield("title")</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
-  <style>
-      body {
-        font-family: 'Quicksand';
-        color: black;
-        background: aliceblue;
-      }
-      h1 {
-        font-family: 'Pacifico';
-      }
-      .card, .list-group-item {
-        background: transparent;
-        border: none;
-        color: white;
-        text-align: center;
-      }
-      .list-group {
-        border-radius: 0;
-      }
-      .card-header {
-        font-size: 1.5rem;
-        border-bottom: none;
-      }
-      .card {
-        border-radius: 10px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
-      }
-      .card-header:first-child {
-        border-radius: 10px;
-      }
-      a, a:hover {
-        text-decoration: none;
-        color: inherit;
-      }
-  </style>
-</head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#fafafa">
 
-<body>
+        <style>
+            body {
+              font-family: 'Quicksand';
+              background: aliceblue;
+            }
+            h1, .sub-head {
+              font-family: 'Pacifico';
+              color: darkslategray;
+              font-weight: 500;
+            }
+            .strapline {
+              font-size: 1.2rem;
+              color: dimgray;
+            }
+            .card-header {
+              font-size: 1.5rem;
+            }
+            .card {
+              border-radius: 10px;
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+            }
+            .hero-card {
+              width: 21rem;
+            }
+            .card-header:first-child {
+              border-radius: 10px;
+            }
+            a, a:hover {
+              text-decoration: none;
+              color: inherit;
+            }
+            .nav-link {
+              font-size: 1.2rem;
+              color: darkslategray;
+              border: 1px solid dimgray;
+              border-radius: 5px;
+            }
+            .btn {
+              background: #7AE7C7;
+              color: black;
+            }
+        </style>
 
-    <header>
-      <nav class="mt-2 navbar navbar-light">
-          <a class="nav-link ml-auto" href="/articles" style="font-size:1.2rem;color:darkslategray;border:1px solid dimgray;border-radius:5px;">See journals</a>
-      </nav>
-    </header>
+    </head>
 
-  <div class="container">
+    <body>
 
-    <main class="mt-4">
-        @yield("content")
-    </main>
+        <header>
 
-  </div>
+          <nav class="mt-2 navbar navbar-light">
+              <a class="nav-link ml-auto" href="/articles">See journals</a>
+          </nav>
 
+        </header>
 
-  <!-- scripts -->
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+        <div class="container">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+          <main class="mt-4">
+
+              @yield("content")
+
+          </main>
+
+        </div>
+
+    </body>
 
 </html>

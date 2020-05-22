@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\ArticleRequest;
+use App\Http\Requests\CommentRequest;
 
 use App\Article;
 use App\Comment;
@@ -41,7 +42,7 @@ class Articles extends Controller
     }
 
     //create new comment
-    public function createComment(Request $request, Article $article) //need to set up a Comment request
+    public function createComment(CommentRequest $request, Article $article) //need to set up a Comment request
     {
         $comment = new Comment($request->all());
         

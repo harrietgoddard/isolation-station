@@ -19,5 +19,4 @@ class Comment extends Model
         return $this->belongsTo(Article::class);
     }
 
-    //set up formatDate method
 }

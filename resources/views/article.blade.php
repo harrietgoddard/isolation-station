@@ -17,7 +17,7 @@
     <div class="mb-5 text-center">
 
         <h2 class="sub-head" style="font-size:2.5rem;">{{ $article->fullName() }}</h2>
-        <p>{{ $article->created_at }}</p>
+        <p class="pt-2">{{ $article->created_at->format('j F Y') }}</p>
 
     </div>
   
@@ -46,7 +46,7 @@
 
                             <li class="list-group-item text-left">
                                 <p class="mb-0">{{ $comment->comment }}</p>
-                                <p><small>{{ $comment->fullName() }}, {{ $comment->created_at}}</small></p>
+                                <p><small>{{ $comment->fullName() }}, {{ $comment->created_at->format('j F Y H:i') }}</small></p>
                             </li>
 
                         @endforeach

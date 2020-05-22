@@ -31,7 +31,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
 
                         <div>
-                            {{ $article->fullName() }}, {{ $article->created_at}}
+                            {{ $article->fullName() }}, {{ $article->created_at->format('j F Y') }}
                         </div>
                         <a class="pl-5" href="{{ route('articles.show',$article->id) }}" style="font-size:1rem;">View/comment</a>
 
@@ -59,7 +59,7 @@
 
                                 <li class="list-group-item text-left">
                                     <p class="mb-0">{{ $comment->comment }}</p>
-                                    <p><small>{{ $comment->fullName() }}, {{ $comment->created_at}}</small></p>
+                                    <p><small>{{ $comment->fullName() }}, {{ $comment->created_at->format('j F Y H:i') }}</small></p>
                                 </li>
 
                             @endforeach

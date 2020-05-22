@@ -36,7 +36,7 @@
 
                 <div class="card mb-5" style="width:40rem;">
 
-                    <div class="card-header text-left" style="font-size:1rem;">
+                    <div class="card-header entry-header text-left" style="font-size:1rem;">
                         Comments
                     </div>
 

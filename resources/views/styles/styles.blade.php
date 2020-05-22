@@ -9,11 +9,17 @@
         font-weight: 500;
     }
     .strapline {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: dimgray;
     }
     .card-header {
         font-size: 1.5rem;
+    }
+    .card-header:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+    .entry-header {
+        background: whitesmoke;
     }
     .card {
         border-radius: 10px;
@@ -21,9 +27,6 @@
     }
     .hero-card {
         width: 21rem;
-    }
-    .card-header:first-child {
-        border-radius: 10px;
     }
     a, a:hover {
         text-decoration: none;

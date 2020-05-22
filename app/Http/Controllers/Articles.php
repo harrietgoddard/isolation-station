@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ArticleRequest;
 
 use App\Article;
 use App\Comment;
@@ -30,7 +31,7 @@ class Articles extends Controller
     }
 
     //create new journal entry
-    public function createArticle(Request $request) //need to set up an Article Request
+    public function createArticle(ArticleRequest $request) //need to set up an Article Request
     {
         $data = $request->all();
 

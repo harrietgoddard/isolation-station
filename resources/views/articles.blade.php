@@ -28,7 +28,7 @@
 
                 <div class="card mb-5 border-0" style="width:40rem;">
 
-                    <div class="card-header d-flex justify-content-between align-items-center">
+                    <div class="card-header entry-header d-flex justify-content-between align-items-center">
 
                         <div>
                             {{ $article->fullName() }}, {{ $article->created_at->format('j F Y') }}
@@ -49,7 +49,7 @@
 
                     <div class="card mb-5" style="width:40rem; margin-top:-30px;">
 
-                        <div class="card-header text-left" style="font-size:1rem;">
+                        <div class="card-header entry-header text-left" style="font-size:1rem;">
                             Comments
                         </div>
 

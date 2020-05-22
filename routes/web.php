@@ -15,24 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Home@index');
 
+//journal entries feed
 Route::get('articles', 'Articles@index');
 
+//create new journal entry
 Route::get('create', 'Articles@create');
-
 Route::post('create', 'Articles@createArticle');
 
-Route::get('articles/{article}', 'Articles@show'); //can remove this - replaced by below
-
-Route::post('articles/{article}', 'Articles@createComment');
-
-Route::get('gratitude', 'Articles@showGratitude');
-
-Route::get('achievements', 'Articles@showAchievements');
-
-Route::get('resolutions', 'Articles@showResolutions');
-
+//view and comment on individual journal entry
 Route::get('articles/{article}',[
     'as'   =>'articles.show',
     'uses' =>'Articles@show'
    ]);
+
+Route::post('articles/{article}', 'Articles@createComment');
+
+
 

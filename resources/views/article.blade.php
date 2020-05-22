@@ -27,9 +27,19 @@
         <div>
 
             <div class="list-group text-center" style="width:40rem;">
+
+                @if ($article->gratitude)
                     <p class="list-group-item text-white" style="background:#ED3456;">Gratitude... {{ $article->gratitude }} </p>
+                @endif
+
+                @if ($article->achievement)
                     <p class="list-group-item text-white" style="background:#2E0854;">Achievement... {{ $article->achievement }} </p>
+                @endif
+
+                @if ($article->resolution)
                     <p class="list-group-item" style="background:#7AE7C7;color:black;">Resolution... {{ $article->resolution }} </p>
+                @endif
+                
             </div>
 
             @if($article->comments->isNotEmpty())

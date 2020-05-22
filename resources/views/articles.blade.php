@@ -38,9 +38,19 @@
                     </div>
 
                     <ul class="list-group list-group-flush text-center">
+
+                        @if($article->gratitude)
                         <li class="list-group-item text-white" style="background:#ED3456;">Gratitude... {{ $article->gratitude }}</li>
+                        @endif
+
+                        @if($article->achievement)
                         <li class="list-group-item text-white" style="background:#2E0854;">Achievement... {{ $article->achievement }}</li>
+                        @endif
+
+                        @if($article->resolution)
                         <li class="list-group-item" style="background:#7AE7C7;color:black;">Resolution... {{ $article->resolution }}</li>
+                        @endif
+                        
                     </ul>
 
                 </div>

@@ -6,11 +6,11 @@
 
 @section("content")
 
-    <div class="pt-5 mb-5">
+    <div class="pt-3 mb-5">
         <h1 class="text-center display-4" style="color:darkslategray;font-weight:500;"><a href="/">Isolation Station</a></h1>
         <h5 class="text-center mb-4" style="color:dimgray;">The self-isolation journalling app</h5>
         <div class="d-flex justify-content-center mt-0 mb-5">
-            <a class="btn btn-outline-primary" href="articles/create" role="button" style="color:darkslategray;border:1px solid dimgray;">Create new journal entry</a>
+            <a class="nav-link" href="create" style="font-size:1.2rem;color:darkslategray;border:1px solid dimgray;border-radius:5px;">Create new journal entry</a>
         </div>
     </div>
 

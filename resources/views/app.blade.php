@@ -55,6 +55,12 @@
 
 <body>
 
+    <header>
+      <nav class="mt-2 navbar navbar-light">
+          <a class="nav-link ml-auto" href="/articles" style="font-size:1.2rem;color:darkslategray;border:1px solid dimgray;border-radius:5px;">See journals</a>
+      </nav>
+    </header>
+
   <div class="container">
 
     <main class="mt-4">

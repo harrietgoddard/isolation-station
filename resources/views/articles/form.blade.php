@@ -2,12 +2,12 @@
 
 @section("content")
     
-    <div class="pt-5 mb-5">
+    <div class="pt-3 mb-5">
         <h1 class="text-center display-4" style="color:darkslategray;font-weight:500;"><a href="/">Isolation Station</a></h1>
         <h5 class="text-center mb-4" style="color:dimgray;">The self-isolation journalling app</h5>
     </div>
     
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mb-5">
     <form class="form card" method="post" style="background:#ED3456; width: 40rem;">
         @csrf
         <h2 class="card-header">Create new journal entry</h2>
@@ -60,8 +60,8 @@
                 @enderror
             </div>
         </fieldset>
-        <div class="card-footer text-right">
-            <button class="btn btn-success">Create</button>
+        <div class="card-footer text-center">
+            <button class="btn btn-success" style="background:#7AE7C7;color:black;">Create</button>
         </div>
     </form>
     </div>

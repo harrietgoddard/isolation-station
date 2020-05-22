@@ -13,6 +13,7 @@ class Comment extends Model
         return $this->first_name . " " . $this->last_name;
     }
     
+    //one-to-many relationship
     public function article()
     {
         return $this->belongsTo(Article::class);

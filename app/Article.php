@@ -14,6 +14,7 @@ class Article extends Model
         return $this->first_name . " " . $this->last_name;
     }
 
+    //one-to-many relationship
     public function comments()
     {
         return $this->hasMany(Comment::class);

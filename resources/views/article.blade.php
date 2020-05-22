@@ -26,7 +26,7 @@
 
         <div>
 
-            <div class="list-group text-center mb-2" style="width:40rem;">
+            <div class="list-group text-center mb-2">
 
                 @if ($article->gratitude)
                     <p class="list-group-item text-white" style="background:#ED3456;">Gratitude... {{ $article->gratitude }} </p>
@@ -44,7 +44,7 @@
 
             @if($article->comments->isNotEmpty())
 
-                <div class="card mb-5" style="width:40rem;">
+                <div class="card mb-5">
 
                     <div class="card-header entry-header text-left" style="font-size:1rem;">
                         Comments

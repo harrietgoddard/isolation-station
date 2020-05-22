@@ -26,7 +26,7 @@
 
             @foreach ($articles as $article)
 
-                <div class="card mb-5 border-0" style="width:40rem;">
+                <div class="card mb-5 border-0" style="max-width:100%;">
 
                     <div class="card-header entry-header d-flex justify-content-between align-items-center">
 
@@ -57,7 +57,7 @@
 
                 @if($article->comments->isNotEmpty())
 
-                    <div class="card mb-5" style="width:40rem; margin-top:-30px;">
+                    <div class="card mb-5" style="max-width:100%; margin-top:-30px;">
 
                         <div class="card-header entry-header text-left" style="font-size:1rem;">
                             Comments

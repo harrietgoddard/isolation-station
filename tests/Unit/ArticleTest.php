@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use App\Article;
+use App\Comment;
 
 class ArticleTest extends TestCase
 {
@@ -24,6 +25,7 @@ class ArticleTest extends TestCase
         $this->assertSame('Jenny Tetly', $this->article->fullName());
     }
 
+    //testing articles are saved to the database
     public function testArticleFromDb()
     {
         Article::create([
@@ -34,5 +36,37 @@ class ArticleTest extends TestCase
         $articleFromDb = Article::all()->first();
 
         $this->assertSame('Henry Baker', $articleFromDb->fullName());
+    }
+
+    //Articles controller tests
+
+    public function testCreateArticle()
+    {
+        $this->call('POST', '/create', [
+            'first_name' => 'Ben',
+            'last_name' => 'Miller'
+        ]);
+
+        $articleFromDb = Article::all()->first();
+
+        $this->assertSame('Ben Miller', $articleFromDb->fullName());
+    }
+
+    public function testCreateComment()
+    {
+        $article = Article::create([
+            'first_name' => 'Georgia',
+            'last_name' => 'Winterborne'
+        ]);
+        
+        $this->call('POST', "articles/{$article->id}", [
+            'first_name' => 'Jake',
+            'last_name' => 'Fuller',
+            'comment' => 'test comment'
+        ]);
+
+        $commentFromDb = Comment::all()->first();
+
+        $this->assertSame('Jake', $commentFromDb->first_name);
     }
 }

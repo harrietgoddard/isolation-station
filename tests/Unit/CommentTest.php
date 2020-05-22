@@ -25,6 +25,7 @@ class CommentTest extends TestCase
         $this->assertSame('Jenny Tetly', $this->comment->fullName());
     }
 
+    //testing comments are saved to the database
     public function testCommentFromDb()
     {
         $article = Article::create([

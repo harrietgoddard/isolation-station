@@ -9,6 +9,7 @@ use App\Comment;
 
 class Articles extends Controller
 {
+    //journal entries feed
     public function index()
     {
         $articles = Article::orderBy('created_at', 'desc')->get();
@@ -16,17 +17,20 @@ class Articles extends Controller
         return view('articles', ['articles' => $articles]);
     }
 
+    //individual journal entry
     public function show(Article $article)
     {
         return view('article', ['article' => $article]);
     }
 
+    //new journal entry form
     public function create(Article $article)
     {
         return view('articles/form', ['article' => $article]);
     }
 
-    public function createArticle(Request $request) //set up an Article Request
+    //create new journal entry
+    public function createArticle(Request $request) //need to set up an Article Request
     {
         $data = $request->all();
 
@@ -35,7 +39,8 @@ class Articles extends Controller
         return redirect("articles/{$article->id}");
     }
 
-    public function createComment(Request $request, Article $article)
+    //create new comment
+    public function createComment(Request $request, Article $article) //need to set up a Comment request
     {
         $comment = new Comment($request->all());
         
@@ -44,24 +49,4 @@ class Articles extends Controller
         return redirect("articles/{$article->id}");
     }
 
-    public function showGratitude()
-    {
-        $articles = Article::all();
-        
-        return view('gratitude', ['articles' => $articles]);
-    }
-
-    public function showAchievements()
-    {
-        $articles = Article::all();
-        
-        return view('achievements', ['articles' => $articles]);
-    }
-
-    public function showResolutions()
-    {
-        $articles = Article::all();
-        
-        return view('resolutions', ['articles' => $articles]);
-    }
 }

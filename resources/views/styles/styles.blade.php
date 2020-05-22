@@ -53,5 +53,19 @@
         background: #7AE7C7;
         color: black;
     }
+
+    @media screen and (max-width: 768px) {
+        
+        .hero-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-card {
+            max-width: 80%;
+            margin-bottom: 30px;
+        }
+
+    }
     
 </style>

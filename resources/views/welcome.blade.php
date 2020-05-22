@@ -18,7 +18,7 @@
 
     </div>
 
-    <div class="d-flex justify-content-between mt-5 mb-5">
+    <div class="hero-container d-flex justify-content-between mt-5 mb-5">
 
         <div class="card hero-card" style="background:#ED3456;">
 

@@ -25,7 +25,7 @@
 
                 <div class="d-flex justify-content-between">
 
-                    <div class="form-group" style="width:18rem;">
+                    <div class="form-group" style="width:48%;">
 
                         <label for="first_name">First name</label>
                         <input id="first_name" name="first_name" class="form-control @error('first_name') is-invalid @enderror" value="{{ old('first_name', $article->first_name) }}"/>
@@ -37,7 +37,7 @@
 
                     </div>
 
-                    <div class="form-group" style="width:18rem;">
+                    <div class="form-group" style="width:48%;">
 
                         <label for="last_name">Last name</label>
                         <input id="last_name" name="last_name" class="form-control @error('last_name') is-invalid @enderror" value="{{ old('last_name', $article->last_name) }}"/>

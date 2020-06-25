@@ -5,6 +5,7 @@ A simple journalling app made entirely with Laravel.
 The user can view, create and comment on journal entries.
 
 The app can be developed further by adding user authentication (none currently set).
+
 See further below for setup instructions.
 
 ![alt text](./img/isolation-station-1.png)

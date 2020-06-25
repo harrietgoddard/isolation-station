@@ -8,8 +8,13 @@ The app can be developed further by adding user authentication (none currently s
 
 See further below for setup instructions.
 
+Homepage
 ![alt text](./img/isolation-station-1.png)
+
+Create journal page
 ![alt text](./img/isolation-station-2.png)
+
+View and comment on journals page
 ![alt text](./img/isolation-station-3.png)
 
 ### Setup

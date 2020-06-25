@@ -1,4 +1,41 @@
+## Isolation station
+
+A simple journalling app made entirely with Laravel.
+The user can view, create and comment on journal entries.
+The app can be developed further by adding user authentication (none currently set).
+See further below for setup instructions.
+
 ![alt text](./img/isolation-station-1.png)
+![alt text](./img/isolation-station-2.png)
+![alt text](./img/isolation-station-3.png)
+
+### Setup
+
+- Clone repository and cd into the project folder
+
+`git clone git@github.com:harrietgoddard/isolation-station.git`
+
+- Install composer and Laravel 
+
+`composer install`
+`composer global require laravel/installer`
+`vendor/bin/homestead/make`
+
+- Change database name and password in .env
+
+`cp .env.example .env`
+`DB_DATABASE=homestead`
+`DB_PASSWORD=secret`
+
+- Run Vagrant
+
+`vagrant up`
+`vagrant ssh`
+`cd code`
+`artisan key:generate`
+`artisan migrate`
+
+
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 

@@ -1,7 +1,9 @@
 ## Isolation station
 
 A simple journalling app made entirely with Laravel.
+
 The user can view, create and comment on journal entries.
+
 The app can be developed further by adding user authentication (none currently set).
 See further below for setup instructions.
 
@@ -18,21 +20,29 @@ See further below for setup instructions.
 - Install composer and Laravel 
 
 `composer install`
+
 `composer global require laravel/installer`
+
 `vendor/bin/homestead/make`
 
 - Change database name and password in .env
 
 `cp .env.example .env`
+
 `DB_DATABASE=homestead`
+
 `DB_PASSWORD=secret`
 
 - Run Vagrant
 
 `vagrant up`
+
 `vagrant ssh`
+
 `cd code`
+
 `artisan key:generate`
+
 `artisan migrate`
 
 
